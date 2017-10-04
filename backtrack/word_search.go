@@ -20,14 +20,14 @@ import (
 // word = "SEE", -> returns true,
 // word = "ABCB", -> returns false.
 type WordSearch struct{
-	Board [][]byte
+	board [][]byte
 }
 
 // Exist is for checking existing word within boards
 func(w *WordSearch) Exist(word string) bool {
-	for i, h := range w.Board {
+	for i, h := range w.board {
 		for j := range h {
-			if w.dfs(w.Board, word, i, j)==true{
+			if w.dfs(w.board, word, i, j)==true{
 				return true;
 			}
 		}
@@ -64,6 +64,6 @@ func(w *WordSearch) dfs(board [][]byte, word string, i, j int) bool {
 // NewWordSearch for create new instance wordsearch
 func NewWordSearch(board [][]byte) *WordSearch{
 	return &WordSearch{
-		Board:board,
+		board:board,
 	}
 }
