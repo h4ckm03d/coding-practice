@@ -1,6 +1,13 @@
 # coding-practice
 coding practice using GO
 
+# Prerequisite
+
+- Install golang
+- Install package dependency
+```
+go get github.com/stretchr/testify/assert
+```
 
 # Backtracking Problem
 
