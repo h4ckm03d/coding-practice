@@ -16,3 +16,10 @@ go get github.com/stretchr/testify/assert
 # Design System
 
 - [LRU Cache](https://github.com/h4ckm03d/coding-practice/blob/master/design/lru/lru_cache.go)
+
+# String
+- [Longest Substring Without Repeating Characters](https://github.com/h4ckm03d/coding-practice/blob/master/string/longest_sequence.go)
+
+
+# Math
+- [Integer Palindrome] (https://github.com/h4ckm03d/coding-practice/blob/master/math/palindrome.go)
