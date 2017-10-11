@@ -5,7 +5,7 @@ import (
 	"strconv"
 )
 
-// IsPalindrom check integer value is palindrom
+// IsPalindrome check integer value is palindrom
 func IsPalindrome(x int) bool {
 	// Special cases:
 	// As discussed above, when x < 0, x is not a palindrome.

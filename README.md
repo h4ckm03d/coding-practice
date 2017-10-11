@@ -22,4 +22,4 @@ go get github.com/stretchr/testify/assert
 
 
 # Math
-- [Integer Palindrome] (https://github.com/h4ckm03d/coding-practice/blob/master/math/palindrome.go)
+- [Integer Palindrome](https://github.com/h4ckm03d/coding-practice/blob/master/math/palindrome.go)
