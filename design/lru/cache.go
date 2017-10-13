@@ -34,6 +34,7 @@ type entry struct {
 	value int
 }
 
+// Constructor is initializer Cache struct
 func Constructor(size int) Cache {
 
 	c := Cache{
@@ -44,6 +45,7 @@ func Constructor(size int) Cache {
 	return c
 }
 
+// Get cache by key
 func (c *Cache) Get(key int) int {
 	if ent, ok := c.items[key]; ok {
 		c.evictList.MoveToFront(ent)
@@ -52,6 +54,7 @@ func (c *Cache) Get(key int) int {
 	return -1
 }
 
+// Put is function to add cache
 func (c *Cache) Put(key int, value int) {
 	// Check for existing item
 	if ent, ok := c.items[key]; ok {
