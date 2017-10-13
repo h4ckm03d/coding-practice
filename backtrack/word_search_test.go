@@ -1,9 +1,8 @@
-package backtrack_test
+package backtrack
 
 import (
 	"testing"
 
-	"github.com/h4ckm03d/coding-practice/backtrack"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -15,7 +14,7 @@ func TestCaseA(t *testing.T) {
 		[]byte("BCD"),
 	}
 
-	nws := backtrack.NewWordSearch(board)
+	nws := NewWordSearch(board)
 
 	assert.Equal(nws.Exist("AAB"), true, "should return true")
 }
@@ -29,7 +28,7 @@ func TestCaseB(t *testing.T) {
 		[]byte("ihkr"),
 	}
 
-	nws := backtrack.NewWordSearch(board)
+	nws := NewWordSearch(board)
 	words := []string{"oath", "pea", "eat", "rain"}
 	assert.Equal(nws.FindWords(words), []string{"eat", "oath"}, "should return []string{\"oath\",\"eat\"}")
 }
@@ -40,7 +39,7 @@ func TestCaseC(t *testing.T) {
 		[]byte("a"),
 	}
 
-	nws := backtrack.NewWordSearch(board)
+	nws := NewWordSearch(board)
 	words := []string{"a", "a"}
 	assert.Equal(nws.FindWords(words), []string{"a"}, "should return a")
 }

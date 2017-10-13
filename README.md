@@ -1,25 +1,36 @@
 # coding-practice
 coding practice using GO
 
-# Prerequisite
+## Prerequisite
 
 - Install golang
 - Install package dependency
-```
+
+```bash
 go get github.com/stretchr/testify/assert
 ```
 
-# Backtracking Problem
+## Backtracking Problem
 
 - [Word Search](https://github.com/h4ckm03d/coding-practice/blob/master/backtrack/word_search.go)
 
-# Design System
+## Design System
 
 - [LRU Cache](https://github.com/h4ckm03d/coding-practice/blob/master/design/lru/cache.go)
 
-# String
+## String
+
 - [Longest Substring Without Repeating Characters](https://github.com/h4ckm03d/coding-practice/blob/master/string/longest_sequence.go)
 
 
-# Math
+## Math
+
 - [Integer Palindrome](https://github.com/h4ckm03d/coding-practice/blob/master/math/palindrome.go)
+
+## FAQ
+
+- How to test all problem?
+
+```bash
+go test ./...
+```
