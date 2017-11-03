@@ -1,6 +1,7 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/8268c77c8c494733bc46780e0bf0b0cb)](https://www.codacy.com/app/h4ckm03d/coding-practice?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=h4ckm03d/coding-practice&amp;utm_campaign=Badge_Grade)
 
 # Practice make perfect
+
 coding practice using GO
 
 ## Prerequisite
@@ -36,3 +37,30 @@ go get github.com/stretchr/testify/assert
 ```bash
 go test ./...
 ```
+
+# LeetCode
+
+## Easy
+
+|#|Title|Tag|
+|:------------- |:------------- |:------------- |
+
+## Medium
+
+|#|Title|Tag|
+|:------------- |:------------- |:------------- |
+
+## Hard
+
+|#|Title|Tag|
+|:------------- |:------------- |:------------- |
+
+[src]: https://github.com/h4ckm03d/coding-practice/tree/master/src
+[note]: https://github.com/h4ckm03d/coding-practice/tree/master/note
+[companies]: https://github.com/h4ckm03d/coding-practice/blob/master/Companies.md
+
+[//]: # (Easy)
+
+[//]: # (Medium)
+
+[//]: # (Hard)
