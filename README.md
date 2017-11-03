@@ -49,11 +49,11 @@ go test ./...
 [companies]: https://github.com/h4ckm03d/coding-practice/blob/master/Companies.md
 
 [//]: # (Easy)
-[009]: https://github.com/h4ckm03d/coding-practice/blob/master/note/leetcode/009/README.md
+[009]: https://github.com/h4ckm03d/coding-practice/blob/master/notes/leetcode/009/README.md
 [//]: # (Medium)
-[003]: https://github.com/h4ckm03d/coding-practice/blob/master/note/leetcode/003/README.md
-[079]: https://github.com/h4ckm03d/coding-practice/blob/master/note/leetcode/079/README.md
+[003]: https://github.com/h4ckm03d/coding-practice/blob/master/notes/leetcode/003/README.md
+[079]: https://github.com/h4ckm03d/coding-practice/blob/master/notes/leetcode/079/README.md
 [//]: # (Hard)
-[146]: https://github.com/h4ckm03d/coding-practice/blob/master/note/leetcode/146/README.md
-[212]: https://github.com/h4ckm03d/coding-practice/blob/master/note/leetcode/212/README.md
-[329]: https://github.com/h4ckm03d/coding-practice/blob/master/note/leetcode/329/README.md
+[146]: https://github.com/h4ckm03d/coding-practice/blob/master/notes/leetcode/146/README.md
+[212]: https://github.com/h4ckm03d/coding-practice/blob/master/notes/leetcode/212/README.md
+[329]: https://github.com/h4ckm03d/coding-practice/blob/master/notes/leetcode/329/README.md
