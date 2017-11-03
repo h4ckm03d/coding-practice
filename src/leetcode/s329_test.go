@@ -1,4 +1,4 @@
-package dfs
+package leetcode
 
 import (
 	"testing"
@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func Test(t *testing.T) {
+func Test329(t *testing.T) {
 	assert := assert.New(t)
 	matrix := [][]int{
 		{9, 9, 4},
@@ -14,6 +14,9 @@ func Test(t *testing.T) {
 		{2, 1, 1},
 	}
 	assert.Equal(4, LongestIncreasingPath(matrix), " should return 4")
+	assert.Equal(0, LongestIncreasingPath([][]int{}), " should return 0")
+	assert.Equal(3, Max(1,3), " should return 3")
+	assert.Equal(4, Max(4,3), " should return 4")
 }
 
 func BenchmarkLip(b *testing.B) {

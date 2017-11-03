@@ -13,23 +13,6 @@ coding practice using GO
 go get github.com/stretchr/testify/assert
 ```
 
-## Backtracking Problem
-
-- [Word Search](https://github.com/h4ckm03d/coding-practice/blob/master/backtrack/word_search.go)
-
-## Design System
-
-- [LRU Cache](https://github.com/h4ckm03d/coding-practice/blob/master/design/lru/cache.go)
-
-## String
-
-- [Longest Substring Without Repeating Characters](https://github.com/h4ckm03d/coding-practice/blob/master/string/longest_sequence.go)
-
-
-## Math
-
-- [Integer Palindrome](https://github.com/h4ckm03d/coding-practice/blob/master/math/palindrome.go)
-
 ## FAQ
 
 - How to test all problem?
@@ -44,23 +27,32 @@ go test ./...
 
 |#|Title|Tag|
 |:------------- |:------------- |:------------- |
+|9|[Palindrome Number][009]|Math|
 
 ## Medium
 
 |#|Title|Tag|
 |:------------- |:------------- |:------------- |
+|3|[Longest Substring Without Repeating Characters][003]|Hash Table, String, Two Pointers|
+|79|[Word Search][079]|Array, Backtracking|
 
 ## Hard
 
 |#|Title|Tag|
 |:------------- |:------------- |:------------- |
-
+|146|[LRU Cache][146]|Array, Backtracking|
+|212|[Word Search 2][212]|Array, Backtracking|
+|329|[Longest Increasing Path in a Matrix][329]|Depth|
 [src]: https://github.com/h4ckm03d/coding-practice/tree/master/src
 [note]: https://github.com/h4ckm03d/coding-practice/tree/master/note
 [companies]: https://github.com/h4ckm03d/coding-practice/blob/master/Companies.md
 
 [//]: # (Easy)
-
+[009]: https://github.com/h4ckm0ed/coding-practice/blob/master/note/009/README.md
 [//]: # (Medium)
-
+[003]: https://github.com/h4ckm0ed/coding-practice/blob/master/note/003/README.md
+[079]: https://github.com/h4ckm0ed/coding-practice/blob/master/note/079/README.md
 [//]: # (Hard)
+[146]: https://github.com/h4ckm0ed/coding-practice/blob/master/note/146/README.md
+[212]: https://github.com/h4ckm0ed/coding-practice/blob/master/note/212/README.md
+[329]: https://github.com/h4ckm0ed/coding-practice/blob/master/note/329/README.md

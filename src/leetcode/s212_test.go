@@ -1,25 +1,11 @@
-package backtrack
+package leetcode
 
 import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
 )
-
-func TestCaseA(t *testing.T) {
-	assert := assert.New(t)
-	board := [][]byte{
-		[]byte("CAA"),
-		[]byte("AAA"),
-		[]byte("BCD"),
-	}
-
-	nws := NewWordSearch(board)
-
-	assert.Equal(nws.Exist("AAB"), true, "should return true")
-}
-
-func TestCaseB(t *testing.T) {
+func Test212(t *testing.T) {
 	assert := assert.New(t)
 	board := [][]byte{
 		[]byte("oaan"),
@@ -28,18 +14,18 @@ func TestCaseB(t *testing.T) {
 		[]byte("ihkr"),
 	}
 
-	nws := NewWordSearch(board)
+	nws := NewWordSearch2(board)
 	words := []string{"oath", "pea", "eat", "rain"}
 	assert.Equal(nws.FindWords(words), []string{"eat", "oath"}, "should return []string{\"oath\",\"eat\"}")
 }
 
-func TestCaseC(t *testing.T) {
+func Test212_2(t *testing.T) {
 	assert := assert.New(t)
 	board := [][]byte{
 		[]byte("a"),
 	}
 
-	nws := NewWordSearch(board)
+	nws := NewWordSearch2(board)
 	words := []string{"a", "a"}
 	assert.Equal(nws.FindWords(words), []string{"a"}, "should return a")
 }

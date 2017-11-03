@@ -1,10 +1,10 @@
-package backtrack
+package leetcode
 
 import (
 	"sort"
 )
 
-// WordSearch is solution for word search problem
+// WordSearch2 is solution for word search problem
 // Given a 2D board and a word, find if the word exists in the grid.
 // The word can be constructed from letters of sequentially adjacent cell, where "adjacent" cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
 // For example,
@@ -17,12 +17,12 @@ import (
 // word = "ABCCED", -> returns true,
 // word = "SEE", -> returns true,
 // word = "ABCB", -> returns false.
-type WordSearch struct {
+type WordSearch2 struct {
 	board [][]byte
 }
 
 // Exist is for checking existing word within boards
-func (w *WordSearch) Exist(word string) bool {
+func (w *WordSearch2) Exist(word string) bool {
 	for i, h := range w.board {
 		for j := range h {
 			if w.dfs(w.board, word, i, j) == true {
@@ -34,7 +34,7 @@ func (w *WordSearch) Exist(word string) bool {
 }
 
 // dfs deep first search
-func (w *WordSearch) dfs(board [][]byte, word string, i, j int) bool {
+func (w *WordSearch2) dfs(board [][]byte, word string, i, j int) bool {
 	//fmt.Println(board)
 	if len(word) == 0 {
 		return true
@@ -58,9 +58,9 @@ func (w *WordSearch) dfs(board [][]byte, word string, i, j int) bool {
 	return result
 }
 
-// NewWordSearch for create new instance wordsearch
-func NewWordSearch(board [][]byte) *WordSearch {
-	return &WordSearch{
+// NewWordSearch2 for create new instance WordSearch2
+func NewWordSearch2(board [][]byte) *WordSearch2 {
+	return &WordSearch2{
 		board: board,
 	}
 }
@@ -81,7 +81,7 @@ func NewWordSearch(board [][]byte) *WordSearch {
 // You may assume that all inputs are consist of lowercase letters a-z.
 // You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?
 // If the current candidate does not exist in all words' prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: Implement Trie (Prefix Tree) first.
-func (w *WordSearch) FindWords(words []string) []string {
+func (w *WordSearch2) FindWords(words []string) []string {
 	words = removeDuplicates(words)
 	sort.Strings(words)
 	var results = []string{}

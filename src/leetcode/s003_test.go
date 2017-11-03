@@ -1,4 +1,4 @@
-package string
+package leetcode
 
 import (
 	"testing"
@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestLSC(t *testing.T) {
+func Test003(t *testing.T) {
 	assert := assert.New(t)
 	assert.Equal(3, LengthOfLongestSubstring("abcabcbb"), "It should return 3")
 

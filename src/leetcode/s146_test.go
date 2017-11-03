@@ -6,7 +6,7 @@ import (
 	"github.com/stretchr/testify/assert"
 )
 
-func TestLru2(t *testing.T) {
+func Test146(t *testing.T) {
 	assert := assert.New(t)
 
 	c := Constructor(2)

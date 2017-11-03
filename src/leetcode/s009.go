@@ -1,7 +1,6 @@
-package math
+package leetcode
 
 import (
-	"fmt"
 	"strconv"
 )
 
@@ -18,9 +17,9 @@ func IsPalindrome(x int) bool {
 	revertedNumber := 0
 	for x > revertedNumber {
 		revertedNumber = revertedNumber*10 + x%10
-		fmt.Println(revertedNumber, x)
+		//fmt.Println(revertedNumber, x)
 		x = x / 10
-		fmt.Println("=>", x)
+		// fmt.Println("=>", x)
 	}
 
 	// When the length is an odd number, we can get rid of the middle digit by revertedNumber/10
