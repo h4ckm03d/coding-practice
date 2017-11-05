@@ -21,11 +21,11 @@ type WordSearch2 struct {
 	board [][]byte
 }
 
-// Exist is for checking existing word within boards
-func (w *WordSearch2) Exist(word string) bool {
-	for i, h := range w.board {
+// WordExist is for checking existing word within boards
+func WordExist(word string, board [][]byte) bool {
+	for i, h := range board {
 		for j := range h {
-			if w.dfs(w.board, word, i, j) == true {
+			if dfsWS(board, word, i, j) == true {
 				return true
 			}
 		}
@@ -33,8 +33,8 @@ func (w *WordSearch2) Exist(word string) bool {
 	return false
 }
 
-// dfs deep first search
-func (w *WordSearch2) dfs(board [][]byte, word string, i, j int) bool {
+// dfsWS deep first search
+func dfsWS(board [][]byte, word string, i, j int) bool {
 	//fmt.Println(board)
 	if len(word) == 0 {
 		return true
@@ -50,19 +50,12 @@ func (w *WordSearch2) dfs(board [][]byte, word string, i, j int) bool {
 	//fmt.Println(board, word, i, j, len(board),len(board[0]), board[i][j]!=word[0], word[0], word[1:], board[i][j]  )
 	tmp := board[i][j]
 	board[i][j] = '#'
-	result := w.dfs(board, word[1:], i+1, j) ||
-		w.dfs(board, word[1:], i-1, j) ||
-		w.dfs(board, word[1:], i, j+1) ||
-		w.dfs(board, word[1:], i, j-1)
+	result := dfsWS(board, word[1:], i+1, j) ||
+		dfsWS(board, word[1:], i-1, j) ||
+		dfsWS(board, word[1:], i, j+1) ||
+		dfsWS(board, word[1:], i, j-1)
 	board[i][j] = tmp
 	return result
-}
-
-// NewWordSearch2 for create new instance WordSearch2
-func NewWordSearch2(board [][]byte) *WordSearch2 {
-	return &WordSearch2{
-		board: board,
-	}
 }
 
 // FindWords to find words from boards
@@ -81,12 +74,12 @@ func NewWordSearch2(board [][]byte) *WordSearch2 {
 // You may assume that all inputs are consist of lowercase letters a-z.
 // You would need to optimize your backtracking to pass the larger test. Could you stop backtracking earlier?
 // If the current candidate does not exist in all words' prefix, you could stop backtracking immediately. What kind of data structure could answer such query efficiently? Does a hash table work? Why or why not? How about a Trie? If you would like to learn how to implement a basic trie, please work on this problem: Implement Trie (Prefix Tree) first.
-func (w *WordSearch2) FindWords(words []string) []string {
+func FindWords(words []string, board [][]byte) []string {
 	words = removeDuplicates(words)
 	sort.Strings(words)
 	var results = []string{}
 	for _, word := range words {
-		if w.Exist(word) {
+		if WordExist(word, board) {
 			results = append(results, word)
 		}
 	}

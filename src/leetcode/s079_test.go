@@ -13,9 +13,6 @@ func Test079(t *testing.T) {
 		[]byte("AAA"),
 		[]byte("BCD"),
 	}
-
-	nws := NewWordSearch(board)
-
-	assert.Equal(nws.Exist("AAB"), true, "should return true")
-	assert.Equal(nws.Exist("AABD"), false, "should return false")
+	assert.Equal(FindWord("AAB", board), true, "should return true")
+	assert.Equal(FindWord("AABD", board), false, "should return false")
 }
