@@ -26,6 +26,6 @@ func BenchmarkLip(b *testing.B) {
 		{2, 1, 1},
 	}
 	for n := 0; n < b.N; n++ {
-		LongestIncreasingPath(matrix);
+		LongestIncreasingPath(matrix)
 	}
 }
