@@ -115,7 +115,6 @@ func (b *Board) Init() (err error) {
 	//loop through all cells in the slice, keeping track of index
 	//if mines at index is true, set cell.mine to true
 	for index := range b.grid {
-		fmt.Println(mines[index])
 		b.grid[index] = &Cell{
 			Mine:    mines[index],
 			Clicked: false,
@@ -287,7 +286,6 @@ func main() {
 	flag.IntVar(&n, "n", 5, "board size")
 
 	flag.Parse()
-	fmt.Println(n)
 	rand.Seed(time.Now().Unix())
 	b := NewBoard(n, n, n)
 	b.Init()
